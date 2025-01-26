@@ -137,11 +137,6 @@ const ParticleBackground: React.FC = () => {
         background: 'linear-gradient(to bottom, #000000, #111827)'
       }}
     >
-      <div className="absolute top-0 left-0 p-4 text-white text-xs">
-        {/* Debug info */}
-        <p>THREE.js v{THREE.REVISION}</p>
-        <p>Window: {window.innerWidth}x{window.innerHeight}</p>
-      </div>
     </div>
   );
 };

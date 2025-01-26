@@ -115,7 +115,7 @@ function App() {
         <section 
           id="home"
           ref={homeRef}
-          className="relative h-screen flex items-center justify-center overflow-hidden"
+          className="relative min-h-screen pt-16 flex items-center justify-center overflow-hidden"
         >
           <div className="container mx-auto px-4 text-center relative z-10">
             <img 
@@ -143,7 +143,7 @@ function App() {
         <section 
           id="about"
           ref={aboutRef} 
-          className={`py-20 bg-gray-900/50 backdrop-blur-sm transition-opacity duration-1000 ${
+          className={`py-20 bg-gray-900/50 transition-opacity duration-1000 ${
             isVisible.about ? 'opacity-100' : 'opacity-0'
           }`}
         >
@@ -188,7 +188,7 @@ function App() {
         <section 
           id="gallery"
           ref={galleryRef} 
-          className={`py-20 bg-gray-900/50 backdrop-blur-sm transition-opacity duration-1000 ${
+          className={`py-20 bg-gray-900/50 transition-opacity duration-1000 ${
             isVisible.gallery ? 'opacity-100' : 'opacity-0'
           }`}
         >
@@ -243,7 +243,7 @@ function App() {
         <section 
           id="presentation"
           ref={presentationRef} 
-          className={`py-20 bg-gray-900/50 backdrop-blur-sm transition-opacity duration-1000 ${
+          className={`py-20 bg-gray-900/50 transition-opacity duration-1000 ${
             isVisible.presentation ? 'opacity-100' : 'opacity-0'
           }`}
         >
@@ -273,7 +273,7 @@ function App() {
         <section 
           id="video"
           ref={videoRef} 
-          className={`py-20 bg-gray-900/50 backdrop-blur-sm transition-opacity duration-1000 ${
+          className={`py-20 bg-gray-900/50 transition-opacity duration-1000 ${
             isVisible.video ? 'opacity-100' : 'opacity-0'
           }`}
         >
@@ -299,7 +299,7 @@ function App() {
         <section 
           id="team"
           ref={teamRef} 
-          className={`py-20 bg-gray-900/50 backdrop-blur-sm transition-opacity duration-1000 ${
+          className={`py-20 bg-gray-900/50 transition-opacity duration-1000 ${
             isVisible.team ? 'opacity-100' : 'opacity-0'
           }`}
         >
