@@ -3,7 +3,7 @@ import * as THREE from 'three';
 
 const ParticleBackground: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [isEnabled] = useState(false); // Set to false to disable particles
+  const [isEnabled] = useState(true); // Set back to true to enable particles
 
   useEffect(() => {
     if (!isEnabled) return; // Early return if disabled
