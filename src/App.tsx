@@ -107,7 +107,7 @@ function App() {
 
   return (
     <>
-      <ParticleBackground />
+      {/* <ParticleBackground /> */}
       <div className="min-h-screen relative">
         <Navbar links={navLinks} onNavigate={scrollToSection} />
         

@@ -1,10 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 
 const ParticleBackground: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [isEnabled] = useState(false); // Set to false to disable particles
 
   useEffect(() => {
+    if (!isEnabled) return; // Early return if disabled
+    
     // Debug logging
     console.log('ParticleBackground mounted');
     console.log('THREE.js version:', THREE.REVISION);
@@ -126,7 +129,7 @@ const ParticleBackground: React.FC = () => {
     } catch (error) {
       console.error('Error in ParticleBackground:', error);
     }
-  }, []);
+  }, [isEnabled]);
 
   return (
     <div 
