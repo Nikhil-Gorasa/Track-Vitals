@@ -108,7 +108,6 @@ const ParticleBackground: React.FC = () => {
         camera.aspect = width / height;
         camera.updateProjectionMatrix();
         renderer.setSize(width, height);
-        console.log('Window resized:', width, height);
       };
 
       window.addEventListener('resize', handleResize);
@@ -144,4 +143,4 @@ const ParticleBackground: React.FC = () => {
   );
 };
 
-export default ParticleBackground; 
+export default ParticleBackground;
