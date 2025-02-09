@@ -10,6 +10,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
@@ -26,5 +27,6 @@ export default defineConfig({
       '@': resolve(__dirname, './src')
     }
   },
+  publicDir: 'public',
   assetsInclude: ['**/*.jpg', '**/*.png']
 });
