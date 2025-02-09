@@ -3,17 +3,7 @@ import { Activity, Users, Image, Youtube, Presentation as PresentationScreen, He
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import TeamMember from './components/TeamMember';
-import gallery1 from './assets/Gallery/1.jpg';
-import gallery2 from './assets/Gallery/2.jpg';
-import gallery3 from './assets/Gallery/3.jpg';
-import gallery4 from './assets/Gallery/4.jpg';
-import gallery5 from './assets/Gallery/5.jpg';
-import logo from './assets/logo.png';
 import ParticleBackground from './components/ParticleBackground';
-
-import shiva from './assets/TeamMembers/Shivasai.jpg';
-import nikhil from './assets/TeamMembers/Nikhil.jpg';
-import charan from './assets/TeamMembers/Charan.jpg';
 
 function App() {
   const homeRef = useRef<HTMLDivElement>(null);
@@ -27,11 +17,11 @@ function App() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
 
   const galleryImages = [
-    gallery1,
-    gallery2,
-    gallery3,
-    gallery4,
-    gallery5
+    '/images/gallery/1.jpg',
+    '/images/gallery/2.jpg',
+    '/images/gallery/3.jpg',
+    '/images/gallery/4.jpg',
+    '/images/gallery/5.jpg'
   ];
 
   useEffect(() => {
@@ -85,21 +75,21 @@ function App() {
     {
       name: 'Shiva Sai',
       role: 'Lead Track Analysis Engineer',
-      image: shiva,
+      image: '/images/team/shivasai.jpg',
       description: 'Expert in railway track monitoring and vibration analysis, specializing in early detection of track anomalies.',
       connection: 'https://www.linkedin.com/in/shiva-sai-4606a3287/'
     },
     {
       name: 'Nikhil Gorasa',
       role: 'Sensor Systems Specialist',
-      image: nikhil,
+      image: '/images/team/nikhil.jpg',
       description: 'Specialist in sensor technologies and data acquisition for real-time railway safety monitoring.',
       connection: 'https://linktr.ee/Nikhil_Gorasa'
     },
     {
       name: 'Charan Reddy',
       role: 'Data Analysis Director',
-      image: charan,
+      image: '/images/team/charan.jpg',
       description: 'Experienced in anomaly detection and data visualization for railway infrastructure integrity.',
       connection: 'https://www.linkedin.com/in/charan-reddy-3636b6288/'
     },
@@ -120,7 +110,7 @@ function App() {
           >
             <div className="container mx-auto px-4 text-center relative z-10">
               <img 
-                src={logo} 
+                src="/images/logo.png"
                 alt="Track Vitals Logo" 
                 className="w-32 h-32 mx-auto mb-1 animate-pulse"
                 style={{ position:'relative', top: '30px', right: '20px' }}
