@@ -11,9 +11,9 @@ import gallery5 from 'assets/Gallery/5.jpg';
 import logo from 'assets/logo.png';
 import ParticleBackground from './components/ParticleBackground';
 
-import shiva from 'assets/TeamMembers/shivasai.jpg';
-import nikhil from 'assets/TeamMembers/nikhil.jpg';
-import charan from 'assets/TeamMembers/charan.jpg';
+import shiva from 'assets/TeamMembers/Shivasai.jpg';
+import nikhil from 'assets/TeamMembers/Nikhil.jpg';
+import charan from 'assets/TeamMembers/Charan.jpg';
 
 function App() {
   const homeRef = useRef<HTMLDivElement>(null);
