@@ -24,9 +24,11 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src')
+      '@': resolve(__dirname, './src'),
+      'assets': resolve(__dirname, './src/assets')
     }
   },
   publicDir: 'public',
-  assetsInclude: ['**/*.jpg', '**/*.png']
+  assetsInclude: ['**/*.jpg', '**/*.png', '**/*.jpeg', '**/*.gif', '**/*.svg'],
+  base: './'
 });
