@@ -3,17 +3,17 @@ import { Activity, Users, Image, Youtube, Presentation as PresentationScreen, He
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import TeamMember from './components/TeamMember';
-import gallery1 from 'assets/Gallery/1.jpg';
-import gallery2 from 'assets/Gallery/2.jpg';
-import gallery3 from 'assets/Gallery/3.jpg';
-import gallery4 from 'assets/Gallery/4.jpg';
-import gallery5 from 'assets/Gallery/5.jpg';
-import logo from 'assets/logo.png';
+import gallery1 from './assets/Gallery/1.jpg';
+import gallery2 from './assets/Gallery/2.jpg';
+import gallery3 from './assets/Gallery/3.jpg';
+import gallery4 from './assets/Gallery/4.jpg';
+import gallery5 from './assets/Gallery/5.jpg';
+import logo from './assets/logo.png';
 import ParticleBackground from './components/ParticleBackground';
 
-import shiva from 'assets/TeamMembers/Shivasai.jpg';
-import nikhil from 'assets/TeamMembers/Nikhil.jpg';
-import charan from 'assets/TeamMembers/Charan.jpg';
+import shiva from './assets/TeamMembers/Shivasai.jpg';
+import nikhil from './assets/TeamMembers/Nikhil.jpg';
+import charan from './assets/TeamMembers/Charan.jpg';
 
 function App() {
   const homeRef = useRef<HTMLDivElement>(null);
